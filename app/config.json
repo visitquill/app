@@ -1,1 +1,12 @@
-{"slug": "visitquill", "title": "VisitQuill", "description": "A focused brief for your next appointment.", "attribution": "Visit preparation, made with FinchNode."}
+{
+  "slug": "visitquill",
+  "title": "VisitQuill",
+  "description": "A focused brief for your next appointment.",
+  "attribution": "Visit preparation, made with FinchNode.",
+  "categories": [
+    "demographics",
+    "conditions",
+    "medications",
+    "labs"
+  ]
+}
