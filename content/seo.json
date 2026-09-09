@@ -10,7 +10,7 @@
   "repositoryStatus": "public",
   "renderStatus": "live",
   "repository": "https://github.com/visitquill/app",
-  "liveUrl": "https://visitquill.onrender.com/",
+  "liveUrl": "https://visitquill.com/",
   "homepage": "individually designed full website",
   "importRoute": "/#/import",
   "subject": "Appointment preparation & personal health briefs",
@@ -32,7 +32,7 @@
     ],
     [
       "Why the connection is a separate step",
-      "We chose FinchNode for the connection layer implemented in VisitQuill because its Hosted Connect flow separates patient authorization from the brief-writing interface. The visitor chooses categories here, then continues to the source organization’s sign-in through the hosted flow. The browser does not receive our production API key. Our connection server requests the authorized snapshot and the app presents the selected information."
+      "We chose FinchNode for the connection layer implemented in VisitQuill because its Hosted Connect flow separates patient authorization from the brief-writing interface. The visitor chooses categories here, then continues to the source organization\u2019s sign-in through the hosted flow. The browser does not receive our production API key. Our connection server requests the authorized snapshot and the app presents the selected information."
     ],
     [
       "A useful brief needs its context",

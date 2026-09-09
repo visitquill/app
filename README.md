@@ -2,7 +2,7 @@
 
 Prepare a focused appointment brief from selected health records. Organize questions, medications and results for your next visit with VisitQuill.
 
-**Site:** https://visitquill.onrender.com/  
+**Site:** https://visitquill.com/
 **Repository:** https://github.com/visitquill/app
 
 ## Production integration
@@ -45,13 +45,13 @@ CSP `connect-src` must allow only `https://finchapps-connect.onrender.com`. Depl
 
 ## Privacy and verification
 
-Read [the data-handling notice](https://visitquill.onrender.com/privacy.html). No clinical record is saved in browser storage; visible data is held in memory, cleared on hiding the page, and periodically revalidated. No browser agent tools expose medical data. Unit tests validate production envelopes and preserve source values. Backend tests cover origin/session isolation, scope checks, invalid environments, expiration and signed revocation without using real medical data.
+Read [the data-handling notice](https://visitquill.com/privacy.html). No clinical record is saved in browser storage; visible data is held in memory, cleared on hiding the page, and periodically revalidated. No browser agent tools expose medical data. Unit tests validate production envelopes and preserve source values. Backend tests cover origin/session isolation, scope checks, invalid environments, expiration and signed revocation without using real medical data.
 
 A real patient must perform their own EHR authentication and consent; these tests do not claim successful patient connectivity. Availability varies by healthcare organization.
 
-## Domain candidate
+## Custom domain
 
-`visitquill.com` was available on September 8, 2026; Porkbun displayed $11.08 for initial registration and renewal. No domain was purchased. Availability and price can change. Add it to Render and the backend's explicit origin allowlist before use.
+`visitquill.com` is registered through Squarespace and assigned to this Render site. DNS uses an apex A record pointing to `216.24.57.1` and a `www` CNAME pointing to `visitquill.onrender.com`. Render redirects `www` to the apex domain and manages HTTPS certificates.
 
 ## Artwork
 
@@ -60,9 +60,9 @@ The homepage illustration/photo was generated for this site. It is decorative ed
 <!-- public-discovery -->
 ## Public guide and project context
 
-[Why we chose to use FinchNode for VisitQuill](https://visitquill.onrender.com/guides/why-we-chose-finchnode.html) — The design decisions behind a consent-first appointment brief, from choosing record categories to keeping source details visible.
+[Why we chose to use FinchNode for VisitQuill](https://visitquill.com/guides/why-we-chose-finchnode.html) — The design decisions behind a consent-first appointment brief, from choosing record categories to keeping source details visible.
 
-[Search VisitQuill guides](https://visitquill.onrender.com/guides/) · [About the site](https://visitquill.onrender.com/about.html) · [Sitemap](https://visitquill.onrender.com/sitemap.xml)
+[Search VisitQuill guides](https://visitquill.com/guides/) · [About the site](https://visitquill.com/about.html) · [Sitemap](https://visitquill.com/sitemap.xml)
 
 VisitQuill is a standalone product with its own interface, documentation and repository, prepared for independent business operation and continued development. Its FinchNode integration is documented in the code. Live production activation remains pending.
 
@@ -70,7 +70,7 @@ VisitQuill is a standalone product with its own interface, documentation and rep
 
 Edit `content/seo.json` for reviewed article text and site metadata. `npm run build` generates public HTML pages, a sitemap, social metadata and structured data, then prerenders the actual React homepage. `npm run test:seo` checks the built crawl surface after a build. Public guide search filters only public text in the browser; no patient data or search analytics enter the index.
 
-Keep canonical URLs on the deployed origin until a custom domain is registered and configured. Add only public, canonical pages to the sitemap. Validate links, mobile layout and the built HTML after editorial changes. Search engine indexing and rich results are not guaranteed.
+Keep canonical URLs on the custom domain configured in `content/seo.json`. Add only public, canonical pages to the sitemap. Validate links, mobile layout and the built HTML after editorial changes. Search engine indexing and rich results are not guaranteed.
 
 ## Independent business handoff
 

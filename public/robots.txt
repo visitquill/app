@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://visitquill.onrender.com/sitemap.xml
+Sitemap: https://visitquill.com/sitemap.xml
