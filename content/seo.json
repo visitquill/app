@@ -1,0 +1,54 @@
+{
+  "slug": "visitquill",
+  "title": "VisitQuill",
+  "description": "Prepare a focused appointment brief from selected health records. Organize questions, medications and results for your next visit with VisitQuill.",
+  "attribution": "Visit preparation, made with FinchNode.",
+  "domain": "visitquill.com",
+  "purpose": "Appointment brief",
+  "theme": "Editorial green briefing sheet",
+  "workflow": "Prepare and download a personal appointment brief from selected authorized records.",
+  "repositoryStatus": "public",
+  "renderStatus": "live",
+  "repository": "https://github.com/visitquill/app",
+  "liveUrl": "https://visitquill.onrender.com/",
+  "homepage": "individually designed full website",
+  "importRoute": "/#/import",
+  "subject": "Appointment preparation & personal health briefs",
+  "color": "#214e40",
+  "paper": "#f6f4eb",
+  "label": "Field notes for your next visit",
+  "article": "why-we-chose-finchnode",
+  "headline": "Why we chose to use FinchNode for VisitQuill",
+  "summary": "The design decisions behind a consent-first appointment brief, from choosing record categories to keeping source details visible.",
+  "topics": [
+    "appointment-preparation",
+    "personal-health-records",
+    "patient-portals"
+  ],
+  "sections": [
+    [
+      "Start with the conversation",
+      "VisitQuill has a narrow job: help someone choose the information they want to bring to an appointment. A record can contain much more than one visit needs. The interface therefore separates importing information from choosing talking points. It presents source details for review and lets the visitor download a selected brief. It does not decide which symptom matters most or suggest a treatment."
+    ],
+    [
+      "Why the connection is a separate step",
+      "We chose FinchNode for the connection layer implemented in VisitQuill because its Hosted Connect flow separates patient authorization from the brief-writing interface. The visitor chooses categories here, then continues to the source organization’s sign-in through the hosted flow. The browser does not receive our production API key. Our connection server requests the authorized snapshot and the app presents the selected information."
+    ],
+    [
+      "A useful brief needs its context",
+      "A medication name without source directions or a lab value without units can be a poor conversation aid. VisitQuill keeps supplied details with the items the visitor reviews. Missing categories and incomplete sync warnings remain visible. An empty section means information was not returned; it does not establish that there is nothing to discuss. Questions about an entry belong in the conversation with the care team."
+    ],
+    [
+      "A focused foundation for the product",
+      "Choosing a connection layer lets VisitQuill concentrate on the appointment experience: readable context, deliberate selection and a useful brief. The public repository makes these design choices inspectable. The site is deployed, while production activation is the next step before live imports become available. Connection and consent details are explained before a visitor authorizes access."
+    ],
+    [
+      "Take a brief you can explain",
+      "When a connection is available, review the imported details, choose the items you want to discuss, and download the brief deliberately. Keep a downloaded copy private. It is a snapshot: later record corrections or sharing revocation will not change that file. Bring your own questions alongside it, since a brief cannot replace the parts of your experience that never appeared in a record."
+    ]
+  ],
+  "reference": [
+    "FinchNode connection platform",
+    "https://finchnode.com/"
+  ]
+}

@@ -1,6 +1,6 @@
-# VisitQuill
+# VisitQuill — Appointment preparation & personal health briefs
 
-A focused brief for your next appointment. Visit preparation, made with FinchNode.
+Prepare a focused appointment brief from selected health records. Organize questions, medications and results for your next visit with VisitQuill.
 
 **Site:** https://visitquill.onrender.com/  
 **Repository:** https://github.com/visitquill/app
@@ -56,3 +56,22 @@ A real patient must perform their own EHR authentication and consent; these test
 ## Artwork
 
 The homepage illustration/photo was generated for this site. It is decorative editorial imagery, not a real patient, clinician endorsement, or clinical-data example.
+
+<!-- public-discovery -->
+## Public guide and project context
+
+[Why we chose to use FinchNode for VisitQuill](https://visitquill.onrender.com/guides/why-we-chose-finchnode.html) — The design decisions behind a consent-first appointment brief, from choosing record categories to keeping source details visible.
+
+[Search VisitQuill guides](https://visitquill.onrender.com/guides/) · [About the site](https://visitquill.onrender.com/about.html) · [Sitemap](https://visitquill.onrender.com/sitemap.xml)
+
+VisitQuill is a standalone product with its own interface, documentation and repository, prepared for independent business operation and continued development. Its FinchNode integration is documented in the code. Live production activation remains pending.
+
+## Public-page build and discoverability
+
+Edit `content/seo.json` for reviewed article text and site metadata. `npm run build` generates public HTML pages, a sitemap, social metadata and structured data, then prerenders the actual React homepage. `npm run test:seo` checks the built crawl surface after a build. Public guide search filters only public text in the browser; no patient data or search analytics enter the index.
+
+Keep canonical URLs on the deployed origin until a custom domain is registered and configured. Add only public, canonical pages to the sitemap. Validate links, mobile layout and the built HTML after editorial changes. Search engine indexing and rich results are not guaranteed.
+
+## Independent business handoff
+
+[Business handoff](HANDOFF.md) covers product identity, the receiving business’s production setup, domain migration, search verification and ongoing editorial maintenance.
