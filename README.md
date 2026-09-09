@@ -75,3 +75,10 @@ Keep canonical URLs on the custom domain configured in `content/seo.json`. Add o
 ## Independent business handoff
 
 [Business handoff](HANDOFF.md) covers product identity, the receiving business’s production setup, domain migration, search verification and ongoing editorial maintenance.
+
+## More product guides
+
+Prepare a focused appointment conversation: choose record-based talking points, understand what the downloaded brief contains, and keep a route back to the details.
+
+- [How to prepare an appointment brief from your health records](https://visitquill.com/guides/prepare-an-appointment-brief.html) — Turn selected conditions, medications and lab observations into a short appointment discussion list. Learn what VisitQuill includes in its text download.
+- [Why appointment topics and connection permissions are separate](https://visitquill.com/guides/appointment-topics-and-connection-permissions.html) — See how VisitQuill separates authorized record access from the talking points a visitor selects for an appointment brief.

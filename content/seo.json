@@ -32,7 +32,7 @@
     ],
     [
       "Why the connection is a separate step",
-      "We chose FinchNode for the connection layer implemented in VisitQuill because its Hosted Connect flow separates patient authorization from the brief-writing interface. The visitor chooses categories here, then continues to the source organization\u2019s sign-in through the hosted flow. The browser does not receive our production API key. Our connection server requests the authorized snapshot and the app presents the selected information."
+      "We chose FinchNode for the connection layer implemented in VisitQuill because its Hosted Connect flow separates patient authorization from the brief-writing interface. The visitor chooses categories here, then continues to the source organization’s sign-in through the hosted flow. The browser does not receive our production API key. Our connection server requests the authorized snapshot and the app presents the selected information."
     ],
     [
       "A useful brief needs its context",
@@ -51,5 +51,112 @@
     "FinchNode connection platform",
     "https://finchnode.com/"
   ],
-  "googleVerification": "TMdY5YFKPrSoVv3fC5iyCopvPVAm9JPLyi2OVYoBrOk"
+  "googleVerification": "TMdY5YFKPrSoVv3fC5iyCopvPVAm9JPLyi2OVYoBrOk",
+  "guideIntro": "Prepare a focused appointment conversation: choose record-based talking points, understand what the downloaded brief contains, and keep a route back to the details.",
+  "finchnodeContext": "VisitQuill uses FinchNode to bring authorized conditions, medications and lab observations into the selection workspace. Choosing what to discuss and creating the brief happen in VisitQuill; the connection does not choose a clinical priority for the visitor.",
+  "articles": [
+    {
+      "slug": "prepare-an-appointment-brief",
+      "title": "How to prepare an appointment brief from your health records",
+      "description": "Turn selected conditions, medications and lab observations into a short appointment discussion list. Learn what VisitQuill includes in its text download.",
+      "published": "2026-09-09",
+      "sections": [
+        {
+          "heading": "Choose a question before choosing a record",
+          "paragraphs": [
+            "A useful appointment brief starts with what you want to discuss. You might want help understanding a recorded label, checking whether an entry is still relevant, or finding the context behind a result. Keep those questions in your own notes; VisitQuill currently selects record labels rather than providing a free-text question editor."
+          ]
+        },
+        {
+          "heading": "Build your selection deliberately",
+          "paragraphs": [
+            "After an authorized import becomes available, the workspace lists conditions, medications and lab observations. Select “Discuss at my visit” beside the entries you want to bring forward. The counter and numbered list show the current selection. Selecting an entry does not change the underlying health record."
+          ],
+          "items": [
+            "Read the displayed record before selecting it.",
+            "Choose the entries connected to your planned conversation.",
+            "Review the numbered list and remove items you selected accidentally."
+          ]
+        },
+        {
+          "heading": "Understand the downloaded brief",
+          "paragraphs": [
+            "“Download my brief” creates a text file of the selected labels. It is a talking-point list, not a full copy of the record: values, units, detailed directions and source documents are not all reproduced. If a detail matters to your question, keep access to the original information through the appropriate patient portal."
+          ]
+        },
+        {
+          "heading": "Finish with a readable list",
+          "paragraphs": [
+            "Read the file before your appointment and add any personal questions using your own text editor. The app does not send the brief to a clinician or book a visit. Selections belong to the current session; a downloaded copy has its own lifetime. Live record connections still require production activation."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "question": "Does the brief include every imported record?",
+          "answer": "No. It contains labels from the entries you select. The download button stays disabled until you choose at least one talking point."
+        },
+        {
+          "question": "Can VisitQuill update my chart?",
+          "answer": "The implemented workflow is read-only. Selecting or downloading talking points does not edit a provider’s record."
+        }
+      ],
+      "references": [
+        {
+          "label": "VisitQuill interface implementation",
+          "url": "https://github.com/visitquill/app/blob/main/app/view.tsx"
+        }
+      ]
+    },
+    {
+      "slug": "appointment-topics-and-connection-permissions",
+      "title": "Why appointment topics and connection permissions are separate",
+      "description": "See how VisitQuill separates authorized record access from the talking points a visitor selects for an appointment brief.",
+      "published": "2026-09-09",
+      "sections": [
+        {
+          "heading": "Two choices with different effects",
+          "paragraphs": [
+            "Approving a record connection determines which categories the application may receive. Checking a talking point determines which returned label goes into the appointment brief. These are separate controls: unchecking a topic is not a request to revoke sharing."
+          ]
+        },
+        {
+          "heading": "Keep the connection on the server",
+          "paragraphs": [
+            "The source implementation starts a hosted connection through a separate server. That server requests the categories allowed for VisitQuill and returns to this site’s import workspace. Browser code does not contain the production API key. The visitor’s temporary session is bound to the exact site origin."
+          ]
+        },
+        {
+          "heading": "Keep the discussion list in the product",
+          "paragraphs": [
+            "Once records are available, the interface maintains a selection of record IDs and derives the brief from those IDs. That makes the output inspectable: every talking point should correspond to a selected entry. The interface does not add recommendations, decide which condition is most important, or send the list elsewhere."
+          ]
+        },
+        {
+          "heading": "Make the boundary visible at handoff",
+          "paragraphs": [
+            "A future operator should preserve this separation when extending VisitQuill. Adding a question editor need not broaden record access. Adding a new record category does require reviewing the actual authorization request and disclosures. The current public deployment documents the implemented flow; it is not evidence that a patient connection has been activated."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "question": "Does removing a talking point revoke access?",
+          "answer": "No. It changes the brief selection. Use the sharing controls described in the privacy notice to manage the authorized connection."
+        }
+      ],
+      "finchnode": {
+        "heading": "The role of FinchNode in this design",
+        "text": "In VisitQuill’s implementation, FinchNode supplies the authorization handoff and records the server can request. VisitQuill supplies the appointment-specific selection and text output. The distinction keeps the explanation of the brief tied to what the visitor actually chose.",
+        "label": "FinchNode patient-authorized record connections",
+        "url": "https://finchnode.com/"
+      },
+      "references": [
+        {
+          "label": "VisitQuill interface implementation",
+          "url": "https://github.com/visitquill/app/blob/main/app/view.tsx"
+        }
+      ]
+    }
+  ]
 }
