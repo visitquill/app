@@ -157,6 +157,131 @@
           "url": "https://github.com/visitquill/app/blob/main/app/view.tsx"
         }
       ]
+    },
+    {
+      "slug": "build-an-appointment-brief-app-with-react-and-finchnode",
+      "title": "How to build an appointment-brief app like VisitQuill",
+      "description": "Follow VisitQuill’s public GitHub code from a React interface to a server-side FinchNode connection, then build, test and deploy a focused health-record app.",
+      "published": "2026-09-09",
+      "theme": "build",
+      "sections": [
+        {
+          "heading": "Begin with a small output you can explain",
+          "paragraphs": [
+            "VisitQuill turns selected condition, medication and lab-observation labels into a personal appointment brief. That is a deliberately small feature boundary. A developer can trace each downloaded line to a selected entry instead of starting with an open-ended attempt to summarize an entire medical history.",
+            "The public frontend repository contains the React interface, formatting helpers, content and tests. Read its README and license before adapting it for your own product. The source is an implementation reference; cloning it does not activate a patient connection."
+          ],
+          "links": [
+            {
+              "label": "VisitQuill GitHub repository",
+              "url": "https://github.com/visitquill/app"
+            },
+            {
+              "label": "Project setup and operating notes",
+              "url": "https://github.com/visitquill/app/blob/main/README.md"
+            }
+          ]
+        },
+        {
+          "heading": "Build the public interface first",
+          "paragraphs": [
+            "The project uses React and Vite, with Node 22.13 or newer specified in its setup. Install dependencies, generate the static build and run the tests. Building before testing matters because the SEO checks inspect the generated files in dist.",
+            "The development command starts the local interface. Keep its public pages separate from the private import route, /#/import. A visitor reading a guide should not start a record request."
+          ],
+          "links": [
+            {
+              "label": "Build scripts and dependency versions",
+              "url": "https://github.com/visitquill/app/blob/main/package.json"
+            }
+          ],
+          "code": "git clone https://github.com/visitquill/app.git\ncd app\nnpm ci\nnpm run build\nnpm test\nnpm run dev"
+        },
+        {
+          "heading": "Trace the brief through the actual component",
+          "paragraphs": [
+            "In app/view.tsx, selected stores record IDs. The component derives chosen entries from that selection, displays their labels and enables the download once at least one entry is selected. The text output is built from those labels.",
+            "To customize the product, start at this boundary. A notes field, a different brief layout or a clearer selection experience can be implemented in the product without pretending that the connection itself generated clinical advice."
+          ],
+          "links": [
+            {
+              "label": "Selection and download implementation",
+              "url": "https://github.com/visitquill/app/blob/main/app/view.tsx"
+            },
+            {
+              "label": "Record formatting helpers",
+              "url": "https://github.com/visitquill/app/blob/main/app/data.mjs"
+            }
+          ]
+        },
+        {
+          "heading": "Put the FinchNode connection behind a server",
+          "paragraphs": [
+            "The separate Node service creates the hosted FinchNode connection session, checks its status and retrieves categories granted to that session. The frontend talks to that service; the production API key stays in the server’s environment. The server binds temporary access to the exact site origin.",
+            "A business adapting the application should operate its own approved configuration. Review the domain-to-site mapping, category allowlist, return URL and frontend Content-Security-Policy together. Merely deploying a copy of the static frontend does not create an independent connection service."
+          ],
+          "links": [
+            {
+              "label": "FinchApps connection service source",
+              "url": "https://github.com/visitquill/finchapps-connect/blob/main/server.mjs"
+            },
+            {
+              "label": "FinchNode API contract",
+              "url": "https://finchnode.com/openapi.yaml"
+            }
+          ]
+        },
+        {
+          "heading": "Test the boundaries before enabling connections",
+          "paragraphs": [
+            "The frontend tests cover record formatting, public page discovery and search. The backend’s injected mock tests exercise origin restrictions, scope and session behavior without requiring real medical records. Use those tests to understand the contract before extending it."
+          ],
+          "items": [
+            "Confirm that unsupported categories are rejected by the server.",
+            "Keep missing source fields visible rather than filling them with examples.",
+            "Check ended sessions and failed authorization, not only a successful response.",
+            "Keep all private workspace routes out of the sitemap."
+          ],
+          "links": [
+            {
+              "label": "Backend security tests",
+              "url": "https://github.com/visitquill/finchapps-connect/blob/main/test/security.test.mjs"
+            }
+          ]
+        },
+        {
+          "heading": "Deploy the product and complete the operator setup",
+          "paragraphs": [
+            "For the static frontend, the documented Render build is npm ci && npm run build with dist as the publish directory. The Node connection service is a separate deployment. A new business must align its registered FinchNode application, purpose, privacy details, server secrets and allowed origin before enabling patient use.",
+            "Keep the business’s canonical domain in content/seo.json and add future guides there. The build generates the searchable guide index, related links and sitemap. VisitQuill’s current public site is live, but its patient connection remains pending operator activation."
+          ],
+          "links": [
+            {
+              "label": "Independent business handoff notes",
+              "url": "https://github.com/visitquill/app/blob/main/HANDOFF.md"
+            },
+            {
+              "label": "Render configuration",
+              "url": "https://github.com/visitquill/app/blob/main/render.yaml"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "question": "Is the website and the connection service one deployment?",
+          "answer": "No. VisitQuill is a static frontend; its authorized connection runs through a separate Node server."
+        },
+        {
+          "question": "Can I put a FinchNode API key in a Vite variable?",
+          "answer": "No. Frontend build variables can be shipped to the browser. Keep production credentials in the backend secret environment."
+        }
+      ],
+      "references": [
+        {
+          "label": "VisitQuill public source repository",
+          "url": "https://github.com/visitquill/app"
+        }
+      ]
     }
   ]
 }

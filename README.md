@@ -82,3 +82,5 @@ Prepare a focused appointment conversation: choose record-based talking points, 
 
 - [How to prepare an appointment brief from your health records](https://visitquill.com/guides/prepare-an-appointment-brief.html) — Turn selected conditions, medications and lab observations into a short appointment discussion list. Learn what VisitQuill includes in its text download.
 - [Why appointment topics and connection permissions are separate](https://visitquill.com/guides/appointment-topics-and-connection-permissions.html) — See how VisitQuill separates authorized record access from the talking points a visitor selects for an appointment brief.
+
+- [How to build an appointment-brief app like VisitQuill](https://visitquill.com/guides/build-an-appointment-brief-app-with-react-and-finchnode.html) — Follow VisitQuill’s public GitHub code from a React interface to a server-side FinchNode connection, then build, test and deploy a focused health-record app.
