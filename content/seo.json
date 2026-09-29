@@ -282,6 +282,208 @@
           "url": "https://github.com/visitquill/app"
         }
       ]
+    },
+    {
+      "slug": "best-ai-medical-scribes-for-small-practices",
+      "title": "Best AI medical scribes for small practices in 2026",
+      "description": "Ambient AI scribes a small practice can actually buy, from Freed and Heidi to EHR-built-in options, with published prices, trial evidence and a pre-purchase checklist.",
+      "published": "2026-09-28",
+      "kind": "industry",
+      "theme": "industry",
+      "sections": [
+        {
+          "heading": "What an ambient scribe does, and what the evidence shows",
+          "paragraphs": [
+            "An ambient AI scribe listens to a visit, with the patient’s permission, and drafts a clinical note for the clinician to review and sign. The clinician remains responsible for the note. The appeal for a small practice is time: fewer evenings finishing charts.",
+            "The evidence is encouraging but mixed. In a randomized trial of 238 UCLA physicians published in NEJM AI, one scribe reduced time in notes by about 9.5% compared with usual care, while the other did not show a statistically significant change; both improved a burnout survey score. A JAMA Network Open study of 263 clinicians using Abridge across six health systems reported burnout falling from 51.9% to 38.8%. Results depend on the product and how it is rolled out."
+          ],
+          "links": [
+            {
+              "label": "Lukac et al., NEJM AI randomized trial",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12768499/"
+            },
+            {
+              "label": "Olson et al., JAMA Network Open",
+              "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2839542"
+            }
+          ]
+        },
+        {
+          "heading": "The shortlist at a glance",
+          "paragraphs": [
+            "Many well-known scribes are sold only to health systems. This ranking favors products a practice of one to ten clinicians can evaluate without an enterprise contract."
+          ],
+          "table": {
+            "caption": "AI scribes for small practices",
+            "columns": [
+              "Rank and scribe",
+              "Published price",
+              "EHR connection",
+              "Best for"
+            ],
+            "rows": [
+              [
+                "1. Freed",
+                "From $39 per month (40 notes); $79 unlimited",
+                "Push to browser-based EHRs on Premier",
+                "Solo clinicians who want to start this week"
+              ],
+              [
+                "2. Heidi Health",
+                "Free plan; Clinician $110 per user per month (annual)",
+                "EHR integration on the Teams plan",
+                "Trying ambient notes at no cost"
+              ],
+              [
+                "3. Your EHR’s own scribe",
+                "Varies by EHR",
+                "Native",
+                "Practices that want notes written straight into the chart"
+              ],
+              [
+                "4. Nabla",
+                "Not published",
+                "Epic, athenahealth, Oracle Health, NextGen, Greenway and others",
+                "Groups on a supported EHR"
+              ],
+              [
+                "5. Microsoft Dragon Copilot",
+                "Not published",
+                "Epic and others",
+                "Practices affiliated with a health system"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "1. Freed — quickest start for a solo clinician",
+          "paragraphs": [
+            "Freed publishes its pricing: Starter at $39 a month for one clinician and 40 notes, Core at $79 a month with unlimited notes, and Premier at $119 monthly or $104 a month billed annually, which adds pushing notes into any browser-based EHR plus ICD-10 and CPT suggestions. There is a seven-day free trial.",
+            "Freed says it does not store patient recordings. Its Groups plan lists an organization-wide business associate agreement; if you are on an individual plan, confirm the BAA arrangement before recording real visits."
+          ],
+          "links": [
+            {
+              "label": "Freed pricing",
+              "url": "https://www.getfreed.ai/pricing"
+            }
+          ]
+        },
+        {
+          "heading": "2. Heidi Health — a free way to try ambient notes",
+          "paragraphs": [
+            "Heidi offers a free plan with unlimited ambient documentation and a Clinician plan at $110 per user per month billed annually, with a 14-day trial. EHR integration is listed on its custom-priced Teams plan. Heidi states that it executes business associate agreements."
+          ],
+          "links": [
+            {
+              "label": "Heidi US pricing",
+              "url": "https://www.heidihealth.com/en-us/pricing"
+            },
+            {
+              "label": "Heidi on HIPAA compliance",
+              "url": "https://www.heidihealth.com/en-us/blog/hipaa-compliance"
+            }
+          ]
+        },
+        {
+          "heading": "3. The scribe built into your EHR",
+          "paragraphs": [
+            "If your EHR has its own scribe, it deserves a trial before a separate product. Notes land in the chart without copying, and the vendor already holds your patient data. athenaOne includes athenaAmbient at no additional charge; eClinicalWorks sells Sunoh.ai; CharmHealth lists an AI Scribe at $125 per provider per month or $2 per encounter; DrChrono offers EverHealth Scribe; and Cerbo lists an AI scribe from $29 a month.",
+            "The trade-off is choice. A built-in scribe ties your documentation workflow to the EHR, and quality varies between vendors."
+          ],
+          "links": [
+            {
+              "label": "athenaAmbient availability",
+              "url": "https://hitconsultant.net/2026/08/13/athenahealth-launches-native-ai-ambient-capabilities-athenaone/"
+            },
+            {
+              "label": "Sunoh.ai pricing",
+              "url": "https://www.sunoh.ai/pricing"
+            },
+            {
+              "label": "CharmHealth pricing",
+              "url": "https://www.charmhealth.com/ehr/ehr-pricing-us.html"
+            },
+            {
+              "label": "Cerbo pricing",
+              "url": "https://www.cer.bo/pricing"
+            }
+          ]
+        },
+        {
+          "heading": "4. Nabla — broad EHR integrations",
+          "paragraphs": [
+            "Nabla reports more than 85,000 clinicians across more than 130 organizations and lists integrations with Epic, athenahealth, Oracle Health, NextGen and Greenway. It does not publish pricing. It publishes terms that include a business associate agreement, which users subject to HIPAA must accept."
+          ],
+          "links": [
+            {
+              "label": "Nabla",
+              "url": "https://www.nabla.com/"
+            },
+            {
+              "label": "Nabla terms and BAA",
+              "url": "https://www.nabla.com/docs/terms-baa"
+            }
+          ]
+        },
+        {
+          "heading": "5. Microsoft Dragon Copilot — for practices tied to a health system",
+          "paragraphs": [
+            "Dragon Copilot, which succeeded DAX, is aimed at physicians, nurses and radiologists and integrates with Epic. Microsoft does not publish pricing. It is most practical for practices whose affiliated health system already licenses it.",
+            "Other enterprise scribes, including Abridge, Suki, Ambience, Commure and DeepScribe, are strong products sold mainly to health systems or specific specialties. DeepScribe, for example, started in oncology."
+          ],
+          "links": [
+            {
+              "label": "Microsoft Dragon Copilot",
+              "url": "https://www.microsoft.com/en-us/health-solutions/clinical-workflow/dragon-copilot"
+            },
+            {
+              "label": "Abridge",
+              "url": "https://www.abridge.com/"
+            },
+            {
+              "label": "Suki",
+              "url": "https://www.suki.ai/"
+            },
+            {
+              "label": "Ambience",
+              "url": "https://www.ambiencehealthcare.com/"
+            },
+            {
+              "label": "Commure Ambient AI",
+              "url": "https://www.commure.com/ambient-ai"
+            },
+            {
+              "label": "DeepScribe",
+              "url": "https://www.deepscribe.ai/"
+            }
+          ]
+        },
+        {
+          "heading": "Check these before recording a real visit",
+          "paragraphs": [
+            "A two-week pilot with a few clinicians will tell you more than any comparison article."
+          ],
+          "items": [
+            "Get a signed business associate agreement that covers the plan you are actually on.",
+            "Decide how you will ask patients for permission to record, and check your state’s recording-consent rules.",
+            "Find out whether audio is stored, for how long, and whether transcripts are used to improve the product.",
+            "Read every draft before signing; watch for invented findings, missed negatives and wrong medication doses.",
+            "Audit any suggested billing codes against the documented visit.",
+            "Measure time spent on notes before and after the pilot rather than relying on impressions."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "question": "Is a free AI scribe safe to use with real patients?",
+          "answer": "Only if the vendor signs a business associate agreement covering that plan and you are comfortable with its data handling. Check the plan terms, not just the marketing page."
+        },
+        {
+          "question": "Do AI scribes reduce burnout?",
+          "answer": "Published studies report improvements in burnout and documentation time, but effects vary by product and setting. Run your own pilot and measure it."
+        }
+      ],
+      "editorialNote": "How we ranked: published pricing, product and policy pages reviewed on September 28, 2026, and peer-reviewed studies linked in each section. Products were not tested hands-on."
     }
   ]
 }
