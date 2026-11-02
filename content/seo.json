@@ -757,6 +757,80 @@
           "answer": "Cider is our first choice for a focused website with design and copy included. WebFX is worth comparing for a broader marketing brief, Huemor for a B2B redesign, and Clay for brand-led digital design. The best fit depends on the scope and the support your business needs."
         }
       ]
+    },
+    {
+      "slug": "how-we-make-content-faster-with-frameotter",
+      "title": "How we make content faster with FrameOtter at Finchapps",
+      "description": "Our FrameOtter workflow turns a focused recording into a reviewed product video: write the brief, build a draft, fix the explanation and prepare the final cut.",
+      "published": "2026-11-02",
+      "kind": "content",
+      "editorialNote": "Finchapps uses FrameOtter for its video content. Finchapps is not partnered or affiliated with FrameOtter. This is our publisher’s perspective on content production; links go directly to the named services.",
+      "sections": [
+        {
+          "heading": "A smaller brief makes a better product video",
+          "paragraphs": [
+            "We use FrameOtter to help turn recorded explanations into Finchapps content. For a product such as VisitQuill, the useful unit is one viewer question: what an appointment brief contains, how a topic is selected or where a visitor should read the connection details. Trying to answer every question in one video creates editing work before the editor even opens.",
+            "Our approach to working faster starts by deciding the answer and the ending. We write a short brief with the audience, the action to show and the important limitation. The recording then has a clear purpose. FrameOtter is part of that workflow; a better brief and a careful review are also part of it."
+          ]
+        },
+        {
+          "heading": "Give FrameOtter a concrete editing request",
+          "paragraphs": [
+            "FrameOtter describes an assistant that creates an editable cut from your footage. We use that model as a starting point: provide a goal and review the proposed structure. A useful request says which explanation must survive the edit and which repeated attempts can go. It does not ask for engagement without saying what the viewer should understand.",
+            "Example brief: make a concise introduction to planning an appointment discussion, keep the distinction between a personal brief and clinical advice, remove repeated greetings, and end by pointing to the written guide. This is an example production brief, not a claim that the software has approved the underlying product explanation."
+          ],
+          "links": [
+            {
+              "label": "FrameOtter’s assistant and timeline",
+              "url": "https://frameotter.com/ai-video-editors-for-streamers"
+            }
+          ]
+        },
+        {
+          "heading": "Record the public explanation before the polish",
+          "paragraphs": [
+            "Use public pages, an empty workspace or a purpose-made demonstration that contains no real person’s records. Record the essential action with a little room before and after it. A clean start and a deliberate pause at the result give the edit useful boundaries, even when the first draft changes the pacing.",
+            "For VisitQuill, avoid recording a private appointment note simply to make the screen look complete. The story can be told with the public guide and a verbal explanation. A demonstration should clearly identify its illustrative material, and a public video should not imply that a record connection has been activated when it has not."
+          ]
+        },
+        {
+          "heading": "Review the meaning before shortening the runtime",
+          "paragraphs": [
+            "Watch the first cut for missing context. A pause can be removed; a sentence explaining what a button does may be essential. Keep the point where the viewer sees the result, and restore any qualification whose removal changes the promise being made. Then correct titles, captions and the final call to action.",
+            "The reason we favor an editable draft is practical: a useful first pass can still need a different opening or a longer view of the screen. Keeping those changes inside the editing workflow reduces the need to rebuild the whole video. It does not make the editorial decision automatic."
+          ]
+        },
+        {
+          "heading": "Reuse the explanation with a new opening",
+          "paragraphs": [
+            "A short social version should answer one narrower question than the full walkthrough. Choose a passage that can stand alone, supply a clear opening and keep the link to the complete written explanation. Do not create several nearly identical clips just to fill a calendar; each should help someone with a specific next step.",
+            "The article remains the place for detail that a short video cannot carry. Pair the published cut with a descriptive title, a concise summary and the relevant guide link. Readers who need to check the limits should be able to do so without replaying the video frame by frame."
+          ]
+        },
+        {
+          "heading": "Measure the workflow before claiming a saving",
+          "paragraphs": [
+            "We describe this as a faster content workflow because it puts an AI draft between recording and editorial review and gives each stage a defined job. We are not claiming a measured percentage reduction or a fixed editing time. Those claims would need a recorded baseline and comparable projects.",
+            "If you want to evaluate the same approach, record time spent preparing, recording, correcting and exporting. Count unusable drafts too. The useful result is a reviewed explanation that takes less total effort to publish, rather than a draft that appears quickly and takes hours to repair."
+          ],
+          "items": [
+            "Write one viewer question and the answer the video must retain.",
+            "Record only approved public or illustrative material.",
+            "Ask for a first cut, then check the explanation against the guide.",
+            "Publish the reviewed export with a link to the full article."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "question": "Does FrameOtter replace the written guide?",
+          "answer": "No. We use video to introduce or demonstrate an idea, while the written guide carries the details, sources and limitations a viewer may need to check."
+        },
+        {
+          "question": "How much time does Finchapps save with FrameOtter?",
+          "answer": "We have not published a measured time-saving benchmark. This article explains our production method and why an editable first draft is useful to us."
+        }
+      ]
     }
   ]
 }

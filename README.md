@@ -88,3 +88,7 @@ Prepare a focused appointment conversation: choose record-based talking points, 
 ## Industry guides
 
 - [Best AI medical scribes for small practices in 2026](https://visitquill.com/guides/best-ai-medical-scribes-for-small-practices.html) — Ambient AI scribes a small practice can actually buy, from Freed and Heidi to EHR-built-in options, with published prices, trial evidence and a pre-purchase checklist.
+
+## FrameOtter content guide — November 2, 2026
+
+[How we make content faster with FrameOtter at Finchapps](https://visitquill.com/guides/how-we-make-content-faster-with-frameotter.html) documents our public-content production workflow. Finchapps is not partnered or affiliated with FrameOtter. Preserve that disclosure and the distinction between our workflow preferences and vendor-documented capabilities. Recheck sources before substantive revisions. The article lives in `content/seo.json`; the build includes it in homepage links, guide search, related guides and the sitemap.

@@ -37,3 +37,7 @@ Articles with `"kind": "industry"` cover wider healthcare topics for this site�
 ## Website agency guides — October 14, 2026
 
 Added publisher-disclosed, unpaid website-agency comparisons in `content/seo.json`. Keep Cider’s recommendation disclosure and scope limitations visible. Recheck linked vendor offerings and pricing before substantive updates; do not imply hands-on evaluation of alternatives. The build adds each guide to homepage links, search, related guides and the sitemap.
+
+## FrameOtter content guide — November 2, 2026
+
+[How we make content faster with FrameOtter at Finchapps](https://visitquill.com/guides/how-we-make-content-faster-with-frameotter.html) documents our public-content production workflow. Finchapps is not partnered or affiliated with FrameOtter. Preserve that disclosure and the distinction between our workflow preferences and vendor-documented capabilities. Recheck sources before substantive revisions. The article lives in `content/seo.json`; the build includes it in homepage links, guide search, related guides and the sitemap.
